@@ -13,7 +13,7 @@ app.set("views" , viewsPath)
 
 app.use('/', MainRouter);
 
-app.use('/user', UserRouter);
+app.use('/register', UserRouter);
 
 app.listen(port, () => {
 	console.log(`I'am listening on port ${port}`);
