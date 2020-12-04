@@ -17,12 +17,15 @@
     </style>
 </head>
 <body>
+    <a href= "register">Register</a>
     <h1>Home Page</h1>
     <h2>Welcome to Best Website ever seen in the World</h2>
-    <a href= "register">Register</a>
+    <% if (name) { %>
+        <p> Hello <%= name %> </p>
+     
+    <%}else {%>
+        <p>Hello <%= "Stranger" %> </p>
+    <% } %> 
     
-
-
-
 </body>
 </html>

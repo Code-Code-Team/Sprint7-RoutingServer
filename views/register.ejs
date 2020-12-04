@@ -1,28 +1,57 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
     <style>
-        body{
-            background-color: aqua;
+        body {
+            background-color: blue
         }
-        *{
-            color : black;
+
+        * {
+            color: black;
             text-align: center;
             margin: 2rem;
             padding: 2rem;
+        }
 
+        p,
+        h3 {
+            margin: 0;
+            padding: 0;
+            text-align: justify;
         }
     </style>
 </head>
+
 <body>
+    <a href="/">Home</a>
     <h1>Register Page</h1>
     <h2>Welcome to Best Website ever seen in the World</h2>
-    <a href= "/">Home</a>
+    <h3>User List</h3>
+
+    <% if (!id) { %>
+        <% userList.forEach(user => { %>
+            <p><%=`${user.id} ----  ${user.name}`%> </p>
+        
+            <% }) %>
+
+    <% } else { %>
+        <p><%=userList[id].name %>  </p>
+
+    <% } %> 
+     
     
 
 
 
+    
+
+
+
+
+
 </body>
+
 </html>
